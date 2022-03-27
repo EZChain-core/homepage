@@ -84,7 +84,7 @@ html {
 
 .navbar-light .navbar-nav .nav-link {
   font-weight: 100;
-  font-size: 15px;
+  font-size: 1rem;
   padding: 8px 0px;
   margin: 0px !important;
   color: #4f4f4f;
@@ -599,7 +599,72 @@ footer {
   padding: 56px 0 27px;
   color: #fff;
 }
-
+/* community */
+.box_container_community {
+  margin-bottom: 330px;
+}
+.box_community {
+  position: relative;
+}
+.layer_1 {
+  background: #cfd8fc;
+  border-radius: 24px;
+  height: 240px;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  width: 95%;
+  left: 30px;
+}
+.layer_2 {
+  height: 240px;
+  background: #3050d0;
+  border-radius: 24px;
+  position: absolute;
+  z-index: 3;
+}
+.left_layer_2 h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+}
+.right_layer-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.right_layer-2 h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+.container_icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 75%;
+}
+.content_layer_2 {
+  background-image: url("../images/background_layer2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: grid;
+  padding: 64px 100px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 60px;
+}
+/* end community */
 footer .flogo {
   width: 105px;
   height: 39px;
@@ -761,14 +826,9 @@ footer .copyright span:last-child a {
 
 @media (max-width: 1279px) {
 }
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-  .section-header .header-counter {
-    margin-top: 40px !important;
-  }
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
 }
-
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .d-mb-none {
@@ -1062,8 +1122,31 @@ footer .copyright span:last-child a {
   .navbar-light .navbar-brand {
     margin: 0;
   }
-}
 
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
+  /* community */
+  .layer_1 {
+    display: none;
+  }
+  .layer_2 {
+    min-height: 450px;
+    position: unset;
+  }
+  .content_layer_2 {
+    grid-template-columns: 1fr;
+    min-height: 100%;
+    column-gap: 0px;
+    padding: 24px;
+  }
+  .container_icon {
+    width: 100%;
+  }
+  .box_container_community {
+    margin-bottom: 0px;
+  }
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .section-header .header-counter {
+    margin-top: 40px !important;
+  }
 }
