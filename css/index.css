@@ -113,11 +113,14 @@ html {
   opacity:0;
   transition:opacity linear 0.15s;
   position: absolute;
-  width: 300px;
   padding: 10px;
-  box-shadow: 0 3px 8px rgb(3 3 3 / 26%);
-  padding: 15px 0 0px 15px;
   border-radius: 5px;
+}
+.explorer_chain {
+  box-shadow: 0 3px 8px rgb(3 3 3 / 15%);
+  padding: 15px 0 0px 15px;
+  width: 300px;
+  margin-top: 10px;
 }
 .sub-menu-explorer li a {
   padding:10px 30px;
@@ -126,7 +129,7 @@ html {
 .nav-item:hover .sub-menu-explorer{
   display: block;
   z-index: 9999;
-  top: 40px;
+  top: 25px;
   opacity:1;
 }
 
@@ -1184,13 +1187,16 @@ footer .copyright span:last-child a {
     display: block;
     z-index: 1;
     position: unset;
-    background-color: white;
-    box-shadow: none;
-    width: 100%;
     z-index:1;
     opacity:1;
     padding: 0;
     min-height: auto;
+  }
+  .explorer_chain {
+    box-shadow: none;
+    width: 100%;
+    background-color: white;
+    margin-top: 0;
   }
 }
 /* Extra small devices (portrait phones, less than 576px) */
