@@ -95,7 +95,6 @@ html {
 }
 
 .navbar-light .navbar-nav > .nav-item {
-  margin-right: 1.5rem;
   display:inline-block;
   position: relative;
   float:left;
