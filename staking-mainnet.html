@@ -121,12 +121,12 @@
                                 stroke-linecap="round"></path>
                         </svg></button>
                     <ol class="ml-4 flex text-sm leading-6 whitespace-nowrap min-w-0">
-                        <li class="flex items-center">EZChain Guides<svg width="3" height="6" aria-hidden="true"
+                        <li class="flex items-center">User guides<svg width="3" height="6" aria-hidden="true"
                                 class="mx-3 overflow-visible text-slate-400">
                                 <path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-width="1.5"
                                     stroke-linecap="round"></path>
                             </svg></li>
-                        <li class="font-semibold text-slate-900 truncate dark:text-slate-200">Staking Guide EZC</li>
+                        <li class="font-semibold text-slate-900 truncate dark:text-slate-200">Staking EZC on EZChain mainnet</li>
                     </ol>
                 </div>
             </div>
@@ -258,8 +258,8 @@
                                     <li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300"
                                             href="/staking-mainnet.html">Staking EZC on EZChain mainnet</a></li>
                                     <li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300"
-                                            href="/token-vesting.html">How to withdraw EZC from SM Token
-                                            Vesting</a></li>
+                                            href="/token-vesting.html">How to withdraw EZC from SM Token Vesting</a>
+                                    </li>
                                     <li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300"
                                             href="https://ezchain.gitbook.io/ezchain/welcome/welcome">Upgrade Guide</a>
                                     </li>
@@ -271,54 +271,54 @@
                 <div class="lg:pl-[19.5rem] 2xl:pl-[34.5rem]">
                     <div class="max-w-3xl mx-auto pt-32 xl:max-w-none xl:ml-0 xl:mr-[15.5rem] xl:pr-16">
                         <div id="header" class="relative z-20 mb-12">
-                            <h1 class="text-xl font-bold text-orange-400">Staking Guide EZC</h1>
-                            <p class="text-base mt-2">EZChain is a multi-chain platform including X Chain, P Chain, and
-                                C Chain. P Chain is used to manage metadata, manage validator nodes, and user staking.
-                                Therefore, to participate in staking on EZChain, you need to have money in P-Chain.</p>
-                            <h2 class="text-base mt-2 font-bold">Step 1: Swap EZC from C-Chain to P-Chain</h2>
-                            <p>EZChain Wallet supports the Cross Chain swap feature to transfer money between Chains.
-                            </p>
-                            <p class="mt-2 underline">1. On the home page on the left side of the screen, select Cross
-                                Chain</p>
+                            <h1 class="text-xl font-bold text-orange-400">Staking EZC on EZChain mainnet </h1>
+                            <p class="text-base mt-2">EZC (EZChain Coin) holders can participate in primary network
+                                staking as <b>Delegators</b> on EZChain mainnet.</p>
+                            <p class="text-base mt-2">A delegator is a token holder, who wants to participate in
+                                staking, but chooses to trust an existing validating node through delegation.
+                                Delegations are initiated through a special “addDelegator” transaction issued to the
+                                Platform Chain (P-Chain).</p>
                             <ul class="ml-4 mt-2">
-                                <li>- In the Source Chain section, select C Chain</li>
-                                <li>- In Destination Chain, select P Chain </li>
-                                <li>- Enter the amount you want to swap, then press Confirm </li>
+                                <li>1. Token used for staking: EZC</li>
+                                <li>2. Reward Token: EZC </li>
+                                <li>3. The minimum amount of EZC staking: 25 EZC </li>
+                                <li>4. The maximum amount of EZC staking: Unlimited</li>
+                                <li>5. Reward payment method: the blockchain system will automatically the principal
+                                    (the EZC you have staked) and the interest (the EZC you are rewarded) on the last
+                                    day of the staking term.</li>
+                                <li>6. Bonus Rate: is pegged when you start staking and valid throughout your staking
+                                    cycle. <p>You can view the current reward rate data on P-chain’s Explorer : <a
+                                            class="underline"
+                                            href="https://explorer.ezchain.com/validators">https://explorer.ezchain.com/validators</a>.
+                                        That is the number <b>Annual Staking Reward</b> (annual interest rate), and
+                                        currently, it is ~ 50%. </p>
+                                    <img class="my-4" src="./images/guides/guide-ezc-12.png" alt="ezchain">
+                                    <p class="text-base mt-2"> The “Annual Staking Reward” will gradually decrease
+                                        depending on the amount of “Total Staked” of the entire network. </p>
+                                    <p class="text-base mt-2"> So the sooner and longer you stake, the more profitable
+                                        you will be. Because the “Annual Staking Reward” is high when the “Total Staked”
+                                        of the entire network is still a tiny amount.</p>
+                                    <p class="text-base mt-2">In addition, when you choose the amount of EZC that you
+                                        intend to stake, the EZChain web wallet will also estimate for you the amount of
+                                        bonus EZC that you will receive at the end of the period. </p>
+                                    <img class="my-4" src="./images/guides/guide-ezc-13.png" alt="ezchain">
+                                    <p class="text-base mt-2">In the “Estimated Reward” section, as the example here is,
+                                        when you Staking 1000 EZC within two months, you will receive a bonus of 83.56
+                                        EZC at the end of the period </p>
+                                </li>
+                                <li> 7. Staking time: you can choose from 2 weeks to 1 year. <p class="text-base mt-2">
+                                        Note: if you select a long staking term, you will benefit more because the
+                                        current “Annual Staking Reward” is high. If you choose a short time, then when
+                                        that time is over, and you want to continue staking, the staking cycle will be
+                                        the following ratio will be calculated according to the “Annual Staking Reward”
+                                        rate at that time </p>
+                                    <p class="text-base mt-2"> Investors, please see the instructions here or attract
+                                        file to perform the staking steps on the EZChain network. In addition, please
+                                        contact the following email address for more information about the program for
+                                        detailed instructions: <a class="text-orange-500"
+                                            href="mailto:admin@ezchain.com">admin@ezchain.com.</a> </p>
+                                </li>
                             </ul>
-                            <img class="my-4" src="./images/guides/guide-ezc-1.png" alt="ezchain">
-                            <p class="mt-2 underline">2. Select Transfer to complete the swap</p>
-                            <img class="my-4" src="./images/guides/guide-ezc-2.png" alt="ezchain">
-                            <p class="my-2">When the transaction is completed, you will see the money in the Balance
-                                P-Chain. </p>
-                            <img class="my-4" src="./images/guides/ezc-guide-3.png" alt="ezchain">
-                            <h2 class="text-base mt-2 font-bold">Step 2: Perform Staking on EZChain using the Delegate
-                                feature</h2>
-                            <p class="mt-2 underline">1. On the left side of the home screen, select Earn on the home
-                                page. Select Add Delegator </p>
-                            <img class="my-4" src="./images/guides/guide-ezc-4.png" alt="ezchain">
-                            <p class="mt-2 underline"> 2. There is a list of validator nodes in the network that
-                                appears, along with the amount that can be delegated and the maximum time that can be
-                                staked on that validator node. Choose a node that suits your needs and click Select.
-                            </p>
-                            <img class="my-4" src="./images/guides/guide-ezc-5.png" alt="ezchain">
-                            <p class="mt-2 underline">3. Fill in the staking delegate information. Then press Confirm.
-                            </p>
-                            <p>Included: </p>
-                            <ul class="ml-4 mt-2">
-                                <li>- Staking End Date section: choose the time you want to end Staking. </li>
-                                <li>- Staking Amount section: enter the amount of EZC you want to stake.</li>
-                            </ul>
-                            <img class="my-4" src="./images/guides/guide-ezc-6.png" alt="ezchain">
-                            <img class="my-4" src="./images/guides/guide-ezc-7.png" alt="ezchain">
-                            <p class="mt-2 underline">4. Check the information and select Submit. </p>
-                            <img class="my-4" src="./images/guides/guide-ezc-8.png" alt="ezchain">
-                            <p>After performing the delegate, you will have to wait about 15 minutes to complete this
-                                Staking. </p>
-                            <img class="my-4" src="./images/guides/guide-ezc-9.png" alt="ezchain">
-                            <p>Once done, you can check the reward information in the Estimate Reward section of the
-                                Earn tab. </p>
-                            <img class="my-4" src="./images/guides/guide-ezc-10.png" alt="ezchain">
-                            <img class="my-4" src="./images/guides/guide-ezc-11.png" alt="ezchain">
                         </div>
                     </div>
                 </div>
