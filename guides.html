@@ -56,7 +56,7 @@
 
 <body class="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed top-0 bg-white-a500 shadow-white-a500 shadow-md  z-100 right-0 left-0"
+        <nav class="navbar navbar-expand-lg navbar-light fixed top-0 bg-white-a500 z-100 right-0 left-0"
             id="header-nav" role="navigation">
             <div class="container p-0 xl-container" style="max-width: 1170px;">
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -89,11 +89,11 @@
                             <a class="nav-link me-lg-3 big-link" href="#">Explorer</a>
                             <ul class="sub-menu-explorer">
                                 <div class="explorer_chain">
-                                    <li class="nav-items">
+                                    <li class="nav-item">
                                         <a class="nav-link me-lg-3" href="https://cchain-explorer.ezchain.com/">
                                             Explorer (C-chain)</a>
                                     </li>
-                                    <li class="nav-items">
+                                    <li class="nav-item">
                                         <a class="nav-link me-lg-3" href="https://explorer.ezchain.com/"> Explorer
                                             (X-Chain & P-Chain)</a>
                                     </li>
@@ -103,8 +103,9 @@
                         <li class="nav-item">
                             <a class="nav-link me-lg-3" href="https://explorer.ezchain.com/validators">Validators </a>
                         </li>
-                        <li class="nav-item nav-link-explorer user-guide">
-                            <a class="nav-link me-lg-3" href="./staking-mainnet.html" style="color: #fd7e14;">User guides</a>
+                        <li class="nav-item user-guide">
+                            <a class="nav-link me-lg-3" href="./staking-mainnet.html" style="color: #fd7e14;">User
+                                guides</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link me-lg-3" href="#comunity">Community</a>
@@ -182,7 +183,7 @@
                                             </path>
                                             <path d="M10.25 9.75 7.75 12l2.5 2.25" stroke-width="1.5"
                                                 stroke-linecap="round" stroke-linejoin="round"
-                                                class="stroke-blue-50 dark:stroke-slate-400 dark:group-hover:stroke-white dark:stroke-slate-400">
+                                                class="stroke-blue-50 dark:stroke-slate-400 dark:group-hover:stroke-white">
                                             </path>
                                             <path d="m13.75 9.75 2.5 2.25-2.5 2.25" stroke-width="1.5"
                                                 stroke-linecap="round" stroke-linejoin="round"
@@ -247,13 +248,19 @@
                             <img class="my-4" src="./images/guides/guide-ezc-11.png" alt="ezchain">
                         </div>
                         <div>
-                            <a class="font-bold inline-block hover:text-orange-400 text-black-a400 text-base cursor-pointer mt-4 float-right mb-4" href="./token-vesting.html">How investors can withdraw EZC ></a>
+                            <a class="font-bold inline-block hover:text-orange-400 text-black-a400 text-base cursor-pointer mt-4 float-right mb-4"
+                                href="./token-vesting.html">How investors can withdraw EZC ></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -892,7 +892,7 @@ footer .copyright span:last-child a {
     padding: 10px 0px;
   }
 
-  .navbar-light .navbar-nav .nav-item:nth-child(5) {
+  .navbar-light .navbar-nav .nav-item:nth-child(7) {
     border-bottom: 0;
   }
 
@@ -1184,9 +1184,6 @@ footer .copyright span:last-child a {
   .ds-none {
     display: none !important;
   }
-  .nav-link-explorer .big-link {
-    display: none
-  }
   .sub-menu-explorer {
     display: block;
     z-index: 1;
@@ -1197,10 +1194,28 @@ footer .copyright span:last-child a {
     min-height: auto;
   }
   .explorer_chain {
+    padding: 0;
     box-shadow: none;
     width: 100%;
     background-color: white;
     margin-top: 0;
+    height: auto;
+  }
+  .sub-menu-explorer .explorer_chain .nav-item{
+    border-top: none;
+    padding: 10px 0 !important;
+  }
+  .nav-link-explorer {
+    padding: 0 !important;
+  }
+  .explorer_chain .nav-item {
+    padding: 0 !important;
+  }
+  .explorer_chain .nav-item:last-child {
+    border-bottom: none !important;
+  }
+  .nav-link-explorer a.big-link {
+    display: none
   }
 }
 /* Extra small devices (portrait phones, less than 576px) */

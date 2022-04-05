@@ -35,10 +35,16 @@
     }
   };
 
-  const navLink = document.getElementsByClassName('nav-link');
-
-  // navLink.addEventListener("click", function(){
-  //   document.getElementsByClassName('navbar-nav').classList.toggle("hide");
-  // });
+  const bigLink = document.getElementsByClassName('big-link');
+  let isClick = false
+  bigLink.addEventListener("click", function(){
+    if(!isClick) {
+      document.getElementsById('sub-menu-explorer').classList.add("isClick");
+      isClick = true
+    }else{
+      document.getElementsById('sub-menu-explorer').classList.add("isClick");
+      isClick = false
+    }
+  });
   
 })();
