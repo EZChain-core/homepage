@@ -1170,6 +1170,9 @@ footer .copyright span:last-child a {
     min-height: 450px;
     position: unset;
   }
+  .left_layer_2 h1 {
+    font-size: 40px;
+  }
   .content_layer_2 {
     grid-template-columns: 1fr;
     min-height: 100%;
@@ -1223,5 +1226,16 @@ footer .copyright span:last-child a {
 @media (max-width: 575.98px) {
   .section-header .header-counter {
     margin-top: 40px !important;
+  }
+  .left_layer_2 h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .section-header .header-counter {
+    margin-top: 40px !important;
+  }
+  .left_layer_2 h1 {
+    font-size: 36px;
   }
 }
