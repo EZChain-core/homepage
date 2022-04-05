@@ -39,109 +39,95 @@
         content="EZChain is a new generation blockchain platform for creating public blockchains and private blockchains.">
     <meta name="twitter:image:alt" content="Alt text for image">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?id=1234" />
+    <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+        </style>
+    </noscript>
 </head>
 
 <body class="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed top-0 bg-white-a500 shadow-white-a500 shadow-md  z-100 right-0 left-0" id="header-nav" role="navigation">
+            <div class="container p-0 xl-container" style="max-width: 1170px;">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0295 0.338079C15.4803 -0.112692 16.2112 -0.112692 16.6619 0.338079C17.1127 0.788849 17.1127 1.51969 16.6619 1.97046L1.97046 16.6619C1.51969 17.1127 0.788848 17.1127 0.338078 16.6619C-0.112693 16.2112 -0.112693 15.4803 0.338078 15.0295L15.0295 0.338079Z"
+                            fill="#212E5E" />
+                        <path
+                            d="M16.6619 15.0295C17.1127 15.4803 17.1127 16.2112 16.6619 16.6619C16.2112 17.1127 15.4803 17.1127 15.0295 16.6619L0.338079 1.97046C-0.112692 1.51969 -0.112692 0.788848 0.338079 0.338078C0.788849 -0.112693 1.51969 -0.112693 1.97046 0.338078L16.6619 15.0295Z"
+                            fill="#212E5E" />
+                    </svg>
+                </button>
+                <a class="link-dark navbar-brand site-title mb-0" href="./index.html">
+                    <div class="logo" style="width: 130px;"><img src="/images/logo.png" style="max-width: 100%;"
+                            alt="ez chain" /></div>
+                </a>
+                <div class="invisible"></div>
+                <div class="collapse navbar-collapse text-light z-99" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-2">
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" target="_blank" href="https://ezchain.gitbook.io/">Developers
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" target="_blank" href="https://wallet.ezchain.com/"> Web
+                                wallet</a>
+                        </li>
+                        <li class="nav-item nav-link-explorer">
+                            <a class="nav-link me-lg-3 big-link" href="#">Explorer</a>
+                            <ul class="sub-menu-explorer">
+                                <div class="explorer_chain">
+                                    <li class="nav-items">
+                                        <a class="nav-link me-lg-3" target="_blank"
+                                            href="https://cchain-explorer.ezchain.com/"> Explorer (C-chain)</a>
+                                    </li>
+                                    <li class="nav-items">
+                                        <a class="nav-link me-lg-3" target="_blank"
+                                            href="https://explorer.ezchain.com/"> Explorer (X-Chain & P-Chain)</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" target="_blank"
+                                href="https://explorer.ezchain.com/validators">Validators </a>
+                        </li>
+                        <li class="nav-item nav-link-explorer">
+                            <a class="nav-link me-lg-3 big-link" href="./guides.html">User guides</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" href="#comunity">Community</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div id="__next">
-        <div class="absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none">
-            <div class="w-[108rem] flex-none flex justify-end">
-                <picture>
-                    <source srcset="/_next/static/media/docs@30.beeb08605f12f699c5abc3814763b65e.avif"
-                        type="image/avif">
-                    <img src="/_next/static/media/docs@tinypng.61f4d3334a6d245fc2297517c87ae044.png" alt=""
-                        class="w-[71.75rem] flex-none max-w-none dark:hidden">
-                </picture>
-                <picture>
-                    <source srcset="/_next/static/media/docs-dark@30.77f062b5fd90f0d2cd4752cd9a8649c8.avif"
-                        type="image/avif"><img
-                        src="/_next/static/media/docs-dark@tinypng.a8984b7fb44a4f8232d04de50220ab31.png" alt=""
-                        class="w-[90rem] flex-none max-w-none hidden dark:block">
-                </picture>
-            </div>
-        </div>
-        <div
-            class="fixed top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent">
-            <div class="max-w-8xl mx-auto">
-                <div
-                    class="py-4 border-b border-slate-900/10 lg:px-8 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0">
-                    <div class="relative flex items-center"><a
-                            class="mr-3 flex-none w-[2.0625rem] overflow-hidden md:w-auto" href="/index.html"><span
-                                class="sr-only">EZChain home page</span><img class="lg:w-32" src="/images/logo.png"
-                                style="max-width: 100%;" alt="ez chain" /></a>
-                        <div class="relative"></div><a
-                            class="ml-3 text-xs leading-5 font-medium text-orange-400 dark:dark:text-orange-400 bg-orange-400/10 rounded-full py-1 px-3 hidden xl:flex items-center hover:bg-orange-400/20"
-                            href="index.html"><strong class="font-semibold">Blockchain 3.0 For easy life</strong><svg
-                                width="2" height="2" fill="currentColor" aria-hidden="true"
-                                class="ml-2 text-orange-400 dark:text-orange-400/70">
-                                <circle cx="1" cy="1" r="1"></circle>
-                            </svg><span class="ml-2"></span><svg width="3" height="6"
-                                class="ml-3 overflow-visible text-orange-300 dark:text-orange-700" aria-hidden="true">
-                                <path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg></a>
-                        <div class="relative hidden lg:flex items-center ml-auto">
-                            <nav class="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
-                                <ul class="flex space-x-8">
-                                    <li><a class="hover:text-orange-500 dark:hover:text-orange-500"
-                                            href="https://ezchain.gitbook.io/">Developers</a></li>
-                                    <li><a href="https://wallet.ezchain.com/"
-                                            class="hover:text-orange-500 dark:hover:text-orange-500">Web wallet</a></li>
-                                    <li><a class="hover:text-orange-500 dark:hover:text-orange-500"
-                                            href="https://explorer.ezchain.com/validators">Validators</a></li>
-                                    <li><a class="hover:text-orange-500 dark:hover:text-orange-500"
-                                            href="https://cchain-explorer.ezchain.com/"> Explorer (C -Chain)</a></li>
-                                    <li><a class="hover:text-orange-500 dark:hover:text-orange-500"
-                                            href="https://explorer.ezchain.com/"> Explorer(X-Chain & P-Chain)</a></li>
-                                </ul>
-                            </nav>
-                        </div><button type="button"
-                            class="ml-auto text-slate-500 w-8 h-8 -my-1 flex items-center justify-center hover:text-slate-600 lg:hidden dark:text-slate-400 dark:hover:text-slate-300"><span
-                                class="sr-only">Search</span><svg width="24" height="24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                aria-hidden="true">
-                                <path d="m19 19-3.5-3.5"></path>
-                                <circle cx="11" cy="11" r="6"></circle>
-                            </svg></button>
-                        <div class="ml-2 -my-1 lg:hidden"><button type="button"
-                                class="text-slate-500 w-8 h-8 flex items-center justify-center hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"><span
-                                    class="sr-only">Navigation</span><svg width="24" height="24" fill="none"
-                                    aria-hidden="true">
-                                    <path
-                                        d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
-                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                </svg></button></div>
-                    </div>
-                </div>
-                <div class="flex items-center p-4 border-b border-slate-900/10 lg:hidden dark:border-slate-50/[0.06]">
-                    <button type="button"
-                        class="text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"><span
-                            class="sr-only">Navigation</span><svg width="24" height="24">
-                            <path d="M5 6h14M5 12h14M5 18h14" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round"></path>
-                        </svg></button>
-                    <ol class="ml-4 flex text-sm leading-6 whitespace-nowrap min-w-0">
-                        <li class="flex items-center">EZChain Guides<svg width="3" height="6" aria-hidden="true"
-                                class="mx-3 overflow-visible text-slate-400">
-                                <path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-width="1.5"
-                                    stroke-linecap="round"></path>
-                            </svg></li>
-                        <li class="font-semibold text-slate-900 truncate dark:text-slate-200">Staking Guide EZC</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
         <div>
-            <div class="max-w-8xl mx-auto px-4 sm:px-6 md:px-8">
+            <div class="container mx-auto" style="max-width: 1170px;">
                 <div
-                    class="hidden lg:block fixed z-20 inset-0 top-[3.8125rem] left-[max(0px,calc(50%-45rem))] right-auto w-[19.5rem] pb-10 px-8 overflow-y-auto">
-                    <nav id="nav" class="lg:text-sm lg:leading-6 relative">
+                    class="hidden lg:block container mx-auto">
+                    <nav id="nav" class="lg:text-sm lg:leading-6 fixed top-24">
                         <div class="sticky top-0 -ml-0.5 pointer-events-none">
                             <div class="h-10 bg-white dark:bg-slate-900"></div>
                         </div>
                         <ul>
-                            <li><a href="https://ezchain.gitbook.io/"
-                                    class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-semibold text-orange-500 dark:text-orange-700">
+                            <li><a href="/staking-mainnet.html"
+                                    class="group flex items-center lg:text-sm lg:leading-6 mb-4 hover:text-orange-400 font-semibold dark:text-orange-700">
                                     <div
                                         class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-orange-200 dark:group-hover:bg-orange-500 dark:bg-orange-500 dark:highlight-white/10">
                                         <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
@@ -154,10 +140,10 @@
                                                 class="fill-orange-400 group-hover:fill-orange-500 dark:fill-orange-200 dark:group-hover:fill-orange-200">
                                             </path>
                                         </svg>
-                                    </div>Developers
+                                    </div>Introduction to EZC staking
                                 </a></li>
-                            <li><a href="https://wallet.ezchain.com/"
-                                    class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300">
+                            <li><a href="/guides.html"
+                                    class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium hover:text-orange-400 text-slate-700 dark:text-slate-400 dark:hover:text-slate-300">
                                     <div
                                         class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-indigo-200 dark:group-hover:bg-indigo-500 dark:bg-slate-800 dark:highlight-white/5">
                                         <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
@@ -171,10 +157,10 @@
                                                 class="fill-indigo-400 group-hover:fill-indigo-500 dark:group-hover:fill-indigo-400 dark:fill-slate-600">
                                             </path>
                                         </svg>
-                                    </div>Web wallet
+                                    </div>Detailed instructions for EZC staking
                                 </a></li>
-                            <li><a href="https://explorer.ezchain.com/validators"
-                                    class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300">
+                            <li><a href="/token-vesting.html"
+                                    class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium text-slate-700 hover:text-orange-400 dark:text-slate-400 dark:hover:text-slate-300">
                                     <div
                                         class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-pink-200 dark:group-hover:bg-pink-500 dark:bg-slate-800 dark:highlight-white/5">
                                         <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
@@ -187,10 +173,10 @@
                                                 class="fill-pink-50 group-hover:fill-pink-100 dark:group-hover:fill-white dark:fill-slate-400">
                                             </path>
                                         </svg>
-                                    </div>Validators
+                                    </div>How to withdraw EZC from SM Token Vesting
                                 </a></li>
-                            <li><a href="https://cchain-explorer.ezchain.com/"
-                                    class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300">
+                            <li><a href="#"
+                                    class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium text-slate-700 hover:text-orange-400 dark:text-slate-400 dark:hover:text-slate-300">
                                     <div
                                         class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-blue-200 dark:group-hover:bg-blue-500 dark:bg-slate-800 dark:highlight-white/5">
                                         <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
@@ -206,10 +192,10 @@
                                                 class="stroke-blue-200 dark:group-hover:stroke-white dark:stroke-slate-400">
                                             </path>
                                         </svg>
-                                    </div>Explorer (C)
+                                    </div>Upgrade Guide
                                 </a></li>
-                            <li><a href="https://explorer.ezchain.com/"
-                                    class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300">
+                            <!-- <li><a href="https://explorer.ezchain.com/"
+                                    class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium text-slate-700 hover:text-orange-400 dark:text-slate-400 dark:hover:text-slate-300">
                                     <div
                                         class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-purple-200 dark:group-hover:bg-purple-400 dark:bg-slate-800 dark:highlight-white/5">
                                         <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
@@ -229,7 +215,7 @@
                                     </div><span class="">Explorer(X & P)</span>
                                 </a></li>
                             <li><a href="https://t.me/EZChainOfficial"
-                                    class="group flex items-center lg:text-sm lg:leading-6 mb-8 font-medium text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300">
+                                    class="group flex items-center lg:text-sm lg:leading-6 mb-8 font-medium text-slate-700 hover:text-orange-400 dark:text-slate-400 dark:hover:text-slate-300">
                                     <div
                                         class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-violet-200 dark:group-hover:bg-violet-500 dark:bg-slate-800 dark:highlight-white/5">
                                         <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
@@ -248,8 +234,8 @@
                                             </circle>
                                         </svg>
                                     </div>Community
-                                </a></li>
-                            <li class="mt-12 lg:mt-8">
+                                </a></li> -->
+                            <!-- <li class="mt-12 lg:mt-8">
                                 <h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">EZChain Guides
                                 </h5>
                                 <ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800">
@@ -258,19 +244,19 @@
                                     <li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300"
                                             href="/staking-mainnet.html">Staking EZC on EZChain mainnet</a></li>
                                     <li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300"
-                                            href="/token-vesting.html">How to withdraw EZC from SM Token
-                                            Vesting</a></li>
+                                            href="/token-vesting.html">How to withdraw EZC from SM Token Vesting</a>
+                                    </li>
                                     <li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300"
                                             href="https://ezchain.gitbook.io/ezchain/welcome/welcome">Upgrade Guide</a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul>
                     </nav>
                 </div>
-                <div class="lg:pl-[19.5rem] 2xl:pl-[34.5rem]">
-                    <div class="max-w-3xl mx-auto pt-32 xl:max-w-none xl:ml-0 xl:mr-[15.5rem] xl:pr-16">
-                        <div id="header" class="relative z-20 mb-12">
+                <div class="lg:pl-[25rem] 2xl:pl-[28.5rem]">
+                    <div class="max-w-3xl mx-auto pt-32 xl:max-w-none xl:ml-0 xl:mr-[15.5rem]">
+                        <div id="header" class="relative -z-20 mb-12">
                             <h1 class="text-xl font-bold text-orange-400">Staking Guide EZC</h1>
                             <p class="text-base mt-2">EZChain is a multi-chain platform including X Chain, P Chain, and
                                 C Chain. P Chain is used to manage metadata, manage validator nodes, and user staking.
