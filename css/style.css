@@ -93,14 +93,18 @@ html {
 .navbar-light .navbar-nav .nav-link:hover {
   color: #fd7e14;
 }
-
+.navbar-light .navbar-nav .nav-link:active {
+  color: #fd7e14;
+}
 .navbar-light .navbar-nav > .nav-item {
   margin-right: 0.5rem;
   display:inline-block;
   position: relative;
   float:left;
 }
-
+.active-link {
+  color: #fd7e14;
+}
 .navbar-light .navbar-nav .nav-item:last-child {
   margin-right: 0px;
 }
